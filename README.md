@@ -1,11 +1,25 @@
 # mechaCar
 
-## Resources
+# Table of Contents 
+  - [Resources](#resources)
+  - [Data](#data)
+  - [Overview](#overview)
+  - [Results](#results)
 
-Data: MechaCar_mpg.csv, Suspension_Coil.csv
+### Resources
 
 Software: R, Rstudio, ggplot2, dpylr, tidyverse
 
-## Overview
+### Data
 
-This project uses R in combination with Rstudio to perform various statistical analysis on car data. A shapiro-wilks test is performed to check for normality. A multiple linear regression model is used to test for statistical significance between various variables and miles per gallon. A matrix is created to test for correlation to find which variables provide a non random amount of significance to what we are trying to test. R certainly has more statistical analysis tools built in versus a language like python. It seems like a powerful tool to be used in conjunction with other programming languages. Right off the bat I thought that ggplot2 was more intuitive than matplotlib. It seemed easier to format graphs which is a big part of data analysis. 
+Data: MechaCar_mpg.csv, Suspension_Coil.csv
+
+### Overview
+
+This project uses R in combination with Rstudio to perform various statistical analysis on car data. A shapiro-wilks test is performed to check for normality. A multiple linear regression model is used to test for statistical significance between various variables and miles per gallon. Since our data types are continuous and we have more than one independent variable a multiple linear regression model will work nicely. We are using it to see how much variance the dependent variable (MPG) is accounted for in a linear combination of independent variables. 
+
+
+### Results 
+After performing various statistical tests we can see that ground clearance and vehicle length play a large part in fuel efficiency. A more detailed write up of this information is available here https://raw.githubusercontent.com/noops/mechaCar/master/carAnalysis/mechaCarWriteUp
+
+![MPG Plot](carAnalysis/mpgPlot.pdf)
